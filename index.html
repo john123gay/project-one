@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recipes & Places</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:700|Merriweather:700" rel="stylesheet">
+
+</head>
+
+<body>
+    <ul id='dropdown1' class='dropdown-content'>
+        <li><a class="cuisine-btn" id="italian" href="#!">Italian</a></li>
+        <li class="divider"></li>
+        <li><a class="cuisine-btn" id="mexican" href="#!">Mexican</a></li>
+        <li class="divider"></li>
+        <li><a class="cuisine-btn" id="chinese" href="#!">Chinese</a></li>
+        <li class="divider"></li>
+        <li><a class="cuisine-btn" id="middle eastern" href="#!">Middle Eastern</a></li>
+        <li class="divider"></li>
+        <li><a class="cuisine-btn" id="japanese" href="#!">Japanese</a></li>
+        <li class="divider"></li>
+        <li><a class="cuisine-btn" id="pizza" href="#!">Pizza</a></li>
+    </ul>
+    <nav class="transparent"> 
+        <div class="nav-wrapper brown darken-4">
+            <a href="#" class="brand-logo center">Recipes & Places</a>
+
+            <div class="dropdown">
+                <ul class="right hide-on-down">
+                    <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Cuisines<i class="material-icons right">arrow_drop_down</i></a></li>
+                </ul>
+            </div>
+            <form class="left-align" id="form1">
+                <div id="bg-input"class="input-field">
+                    
+                    <input id="input-text" type="search" required>
+                    <label id="search-btn" class="label-icon" for="search"><i class="material-icons">search</i></label>
+                    <i class="material-icons">close</i>
+                </div>
+            </form>
+        </div>
+    </nav>
+    <div id="intro-view"class="row">
+            <div id="food-view" class="col m6" >
+                <h4>Find a recipe</h4>
+            </div>
+            <div id="place-view" class="col m6" >
+                <h4>Find a place to eat</h4>
+            </div>
+    </div>
+    <div class="row">
+        <div class="col s1 m1">
+        </div>
+        <div id="recipe-display" class="col s12 m6">
+        </div>
+        <div id="place-display" class="col s12 m4">
+        </div>
+        <div class="col s1 m1">
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="assets/javascript/zomato.js"></script>
+    <script src="assets/javascript/spoonacular.js"></script>
+</body>
+
+</html>
